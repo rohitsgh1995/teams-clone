@@ -26,7 +26,6 @@ const SidebarItem = styled(Box)`
     &:hover {
         background: #1a1a1a;
         color: #8e7def;
-        border-left: 1px solid #8e7def;
     }
     .MuiTypography-caption {
         font-size: 0.6rem;
@@ -35,44 +34,42 @@ const SidebarItem = styled(Box)`
 
 const Sidebar = () => {
     return (
-        <Box sx={{ background: '#0a0a0a', width: 68, height: '100vh' }}>
-            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'top', gap: '0.3rem', height: '100%' }}>
-                <SidebarItem>
-                    <NotificationsNoneOutlinedIcon />
-                    <Typography variant="caption">Activity</Typography>
-                </SidebarItem>
-                <SidebarItem>
-                    <ChatRoundedIcon />
-                    <Typography variant="caption">Chat</Typography>
-                </SidebarItem>
-                <SidebarItem>
-                    <Groups2RoundedIcon />
-                    <Typography variant="caption">Teams</Typography>
-                </SidebarItem>
-                <SidebarItem>
-                    <CalendarMonthIcon />
-                    <Typography variant="caption">Calendar</Typography>
-                </SidebarItem>
-                <SidebarItem>
-                    <CallIcon />
-                    <Typography variant="caption">Calls</Typography>
-                </SidebarItem>
-                <SidebarItem>
-                    <CloudQueueIcon />
-                    <Typography variant="caption">One Drive</Typography>
-                </SidebarItem>
-                <SidebarItem>
-                    <SignalCellularAltIcon />
-                    <Typography variant="caption">Power BI</Typography>
-                </SidebarItem>
-                <SidebarItem>
-                    <MoreHorizIcon />
-                </SidebarItem>
-                <SidebarItem>
-                    <AddBoxIcon />
-                    <Typography variant="caption">Apps</Typography>
-                </SidebarItem>
-            </Box>
+        <Box sx={{ background: '#0a0a0a', width: 68, height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'top', gap: '1px' }}>
+            <SidebarItem>
+                <NotificationsNoneOutlinedIcon />
+                <Typography variant="caption">Activity</Typography>
+            </SidebarItem>
+            <SidebarItem>
+                <ChatRoundedIcon />
+                <Typography variant="caption">Chat</Typography>
+            </SidebarItem>
+            <SidebarItem>
+                <Groups2RoundedIcon />
+                <Typography variant="caption">Teams</Typography>
+            </SidebarItem>
+            <SidebarItem>
+                <CalendarMonthIcon />
+                <Typography variant="caption">Calendar</Typography>
+            </SidebarItem>
+            <SidebarItem>
+                <CallIcon />
+                <Typography variant="caption">Calls</Typography>
+            </SidebarItem>
+            <SidebarItem>
+                <CloudQueueIcon />
+                <Typography variant="caption">One Drive</Typography>
+            </SidebarItem>
+            <SidebarItem>
+                <SignalCellularAltIcon />
+                <Typography variant="caption">Power BI</Typography>
+            </SidebarItem>
+            <SidebarItem>
+                <MoreHorizIcon />
+            </SidebarItem>
+            <SidebarItem>
+                <AddBoxIcon />
+                <Typography variant="caption">Apps</Typography>
+            </SidebarItem>
         </Box>
     )
 }

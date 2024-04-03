@@ -4,9 +4,9 @@ import Sidebar from './components/sidebar/Sidebar';
 
 function App() {
   return (
-    <Box sx={{ height: '100vh' }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
       <Navbar />
-      <Box>
+      <Box sx={{ display: 'flex', height: '100%' }}>
         <Sidebar />
       </Box>
     </Box>

@@ -4,7 +4,6 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
@@ -157,8 +156,8 @@ export default function Navbar() {
 
     return (
         <Box>
-            <AppBar position="static" style={{ color: '#adadad', backgroundColor: '#0a0a0a', boxShadow: 'none', borderBottom: '0.5px solid #adadad' }}>
-                <Toolbar style={{ minHeight: 47 }}>
+            <AppBar position="static" style={{ color: '#adadad', backgroundColor: '#0a0a0a', boxShadow: 'none', borderBottomWidth: '1px', borderBottomStyle: 'solid', borderBottomColor: '#242424' }}>
+                <Toolbar style={{ minHeight: 47, height: 47 }}>
                     <IconButton
                         size="small"
                         edge="start"
@@ -168,21 +167,14 @@ export default function Navbar() {
                     >
                         <AppsIcon />
                     </IconButton>
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="div"
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                    >
-                        Teams
-                    </Typography>
+                    <Box className="icons8-microsoft-teams-2019"></Box>
                     <Box sx={{ flexGrow: 1 }} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         <Search style={{ width: 342, height: 32 }}>
                             <SearchIconWrapper>
                                 <SearchIcon />
                             </SearchIconWrapper>
-                            <StyledInputBase
-                                placeholder="Search…"
+                            <StyledInputBase style={{ width: '100%', height: '100%', padding: 0, fontSize: 14 }}
+                                placeholder="Search"
                                 inputProps={{ 'aria-label': 'search' }}
                             />
                         </Search>
